@@ -75,9 +75,9 @@ def spur(cx, cy, m, n, pa, theta):
     #print(data)
  
     gearTooth = cobj(data, "SHAPE", {
-            "fillColor":"#1ce320",
+            "fillColor":"#FFFF33",
             "border": True,
-            "strokeColor": "#ff000" })
+            "strokeColor": "#00FFFF" })
     #gearTooth.rotate(180/n) # rotate gear 1/2 tooth to mesh, 請注意 rotate 角度為 degree
     # theta 為角度
     gearTooth.rotate(theta) 
@@ -113,20 +113,22 @@ def spur(cx, cy, m, n, pa, theta):
 # 3個齒輪的齒數
 n1 = 30
 n2 = 15
-n3 = 15
-n4 = 30
+n3 = 30
+n4 = 15
+n5 = 30
  
 # m 為模數, 根據畫布的寬度, 計算適合的模數大小
 # Module = mm of pitch diameter per tooth
 # 利用 80% 的畫布寬度進行繪圖
 # 計算模數的對應尺寸
-m = canvas.width*0.8/(n1+n2+n3+n4)
+m = canvas.width*0.8/(n1+n2+n3+n4+n5)
  
 # 根據齒數與模組計算各齒輪的節圓半徑
 pr1 = n1*m/2
 pr2 = n2*m/2
 pr3 = n3*m/2
 pr4 = n4*m/2
+pr5 = n5*m/2
  
 # 畫布左右兩側都保留畫布寬度的 10%
 # 依此計算對應的最左邊齒輪的軸心座標
@@ -147,7 +149,8 @@ spur(cx+pr1+pr2, cy, m, n2, pa, 180-180/n2)
 # 但是第2齒為了與第一齒囓合時, 已經從原始定位線轉了 180-180/n2 度
 # 而當第2齒從與第3齒囓合的定位線, 逆時鐘旋轉 180-180/n2 角度後, 原先囓合的第3齒必須要再配合旋轉 (180-180/n2 )*n2/n3
 spur(cx+pr1+pr2+pr2+pr3, cy, m, n3, pa, 180-180/n3+(180-180/n2)*n2/n3)
-spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4)
+spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, (180-180/n3)*n3/n4)
+spur(cx+pr1+pr2+pr2+pr3+pr3+pr4+pr4+pr5, cy, m, n5, pa, (180-180/n4)*n4/n5)
 </script>
 '''
     return outstring
