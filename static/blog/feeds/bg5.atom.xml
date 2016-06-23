@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CD期末考週 網頁 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/bg5.atom.xml" rel="self"></link><id>./</id><updated>2016-06-23T11:10:02+08:00</updated><entry><title>協同產品設計實習期末考週專案報告bg5</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html" rel="alternate"></link><updated>2016-06-23T11:10:02+08:00</updated><author><name>40323255</name></author><id>tag:,2016-06-23:./xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;第18週期末心得:
@@ -12,8 +13,17 @@
 期末最後大家要一起迅速完成7項任務，讓大家更能把團隊合作的精神，發揮的淋漓盡致，架構、2D繪圖、齒輪座，大家一起把這些完成，要在短短的4節課內要做完，大家都是環環相扣的，如果不靠大家分工合作，那麼這個團隊就會被破壞了。
 大家彼此互相提升彼此的能力，讓這個期末作業，更加快速地進行及結束，這學期很感謝其他5位組員的幫忙，我在Leo架構這塊比較弱，也多虧他們慢慢得教我，我才慢慢對LeoEditor更瞭解了。&lt;/p&gt;</summary><category term="40323255"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:14:09+08:00</updated><author><name>40323253</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;p&gt;為了能夠更客觀進行各組與各學員的期末自評, 特別以組為單位, 各組員為內容建構成員, 利用四堂課程的時間, 在各組新建的 Github 倉儲中完成此一專案報告.&lt;/p&gt;
 >>>>>>> 148c26e62b7c9a171bcd80508deb9396cf51dd61
+=======
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CD期末考週 網頁 (虎尾科大MDE)</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/" rel="alternate"></link><link href="http://cdw18-ag100.rhcloud.com/static/blog/feeds/bg5.atom.xml" rel="self"></link><id>http://cdw18-ag100.rhcloud.com/static/blog/</id><updated>2016-06-23T11:36:52+08:00</updated><entry><title>協同產品設計實習期末考週專案報告bg5</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html" rel="alternate"></link><updated>2016-06-23T11:36:52+08:00</updated><author><name>40323255</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
+&lt;p&gt;第18週期末心得:
+期末最後大家要一起迅速完成7項任務，讓大家更能把團隊合作的精神，發揮的淋漓盡致，架構、2D繪圖、齒輪座，大家一起把這些完成，要在短短的4節課內要做完，大家都是環環相扣的，如果不靠大家分工合作，那麼這個團隊就會被破壞了。
+大家彼此互相提升彼此的能力，讓這個期末作業，更加快速地進行及結束，這學期很感謝其他5位組員的幫忙，我在Leo架構這塊比較弱，也多虧他們慢慢得教我，我才慢慢對LeoEditor更瞭解了。&lt;/p&gt;</summary><category term="40323255"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:36:52+08:00</updated><author><name>40323206</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+>>>>>>> 2b842fe798c594ca9972192fc3da0fb7acd76c14
 
+&lt;p&gt;基本專案建置流程:&lt;/p&gt;</summary><category term="40323206"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告bg5</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html" rel="alternate"></link><updated>2016-06-23T11:36:52+08:00</updated><author><name>40323217</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+<<<<<<< HEAD
 &lt;p&gt;基本專案建置流程:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -44,9 +54,19 @@
 &lt;p&gt;第18週期末心得:我們在經歷過2D齒輪、2D鍊條、3D Onshape齒輪組合在這過程當中遇到許多問題，起初是畫布上沒有設定清楚且沒有啟動Wsgi.py去檢查有沒有衝突就推回去所以導致倉儲爆掉，所以在這當中讓我學習到必須要將畫布當中的設定設定好才可以推回去，2D 鍊條遇到的問題就是在組立時候沒有很均勻，原因是因為使用Solvespaces去計算角度時候有算錯所以導致此問題，3D Onshape齒輪是遇到干涉問題，所以必須使用前一個齒數／你的齒數去把齒輪轉到沒有干涉的角度，最後謝謝老師教了我們兩年的協同產品的課程，讓我們在這當中學習到組員間的溝通，因為沒有溝通清楚而導致的問題實在非常的多，所以在進行協同產品裡重要的一環就是溝通，最後我在這裡謝謝老師跟我的組員。&lt;/p&gt;</summary><category term="40323217"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:10:02+08:00</updated><author><name>40323206</name></author><id>tag:,2016-06-23:./xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 =======
 &lt;p&gt;祝大家 2016 Summer 假期愉快!&lt;/p&gt;</summary><category term="40323253"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告bg5</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html" rel="alternate"></link><updated>2016-06-23T11:14:09+08:00</updated><author><name>40323217</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao-bg5.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+=======
+&lt;p&gt;第18週期末心得:我們在經歷過2D齒輪、2D鍊條、3D Onshape齒輪組合在這過程當中遇到許多問題，起初是畫布上沒有設定清楚且沒有啟動Wsgi.py去檢查有沒有衝突就推回去所以導致倉儲爆掉，所以在這當中讓我學習到必須要將畫布當中的設定設定好才可以推回去，2D 鍊條遇到的問題就是在組立時候沒有很均勻，原因是因為使用Solvespaces去計算角度時候有算錯所以導致此問題，3D Onshape齒輪是遇到干涉問題，所以必須使用前一個齒數你的齒數去把齒輪轉到沒有干涉的角度，最後謝謝老師教了我們兩年的協同產品的課程，讓我們在這當中學習到組員間的溝通，因為沒有溝通清楚而導致的問題實在非常的多，所以在進行協同產品裡重要的一環就是溝通，最後我在這裡謝謝老師跟我的組員。&lt;/p&gt;</summary><category term="40323217"></category><category term="cdw18"></category></entry><entry><title>40323253-協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/40323253-xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:33:57+08:00</updated><author><name>40323253</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/40323253-xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;p&gt;第18週期末心得:我們在經歷過2D齒輪、2D鍊條、3D Onshape齒輪組合在這過程當中遇到許多問題，起初是畫布上沒有設定清楚且沒有啟動Wsgi.py去檢查有沒有衝突就推回去所以導致倉儲爆掉，所以在這當中讓我學習到必須要將畫布當中的設定設定好才可以推回去，2D 鍊條遇到的問題就是在組立時候沒有很均勻，原因是因為使用Solvespaces去計算角度時候有算錯所以導致此問題，3D Onshape齒輪是遇到干涉問題，所以必須使用前一個齒數你的齒數去把齒輪轉到沒有干涉的角度，最後謝謝老師教了我們兩年的協同產品的課程，讓我們在這當中學習到組員間的溝通，因為沒有溝通清楚而導致的問題實在非常的多，所以在進行協同產品裡重要的一環就是溝通，最後我在這裡謝謝老師跟我的組員。&lt;/p&gt;</summary><category term="40323217"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:14:09+08:00</updated><author><name>40323206</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;h3&gt;W18期末考週的專案報告，組長先在GitHub創立我們的分組倉儲，並命名為2016springcd_bG5，接著我們將個人的 Github Page 網頁放入 REAEME.md 檔案中，
+完成後我們先以3D繪圖著手，一個人負責一顆齒輪，很快的就完成了組裝。
+3D繪製完成後我們把老師倉儲裡的架構複製到我們這組，在master中處理畫布，在gh-pages中編輯心得。&lt;/h3&gt;
 
+&lt;h2&gt;2D齒輪配合。&lt;/h2&gt;
+>>>>>>> 2b842fe798c594ca9972192fc3da0fb7acd76c14
+
+&lt;h2&gt;3D齒輪配合。&lt;/h2&gt;
+
+<<<<<<< HEAD
 &lt;p&gt;基本專案建置流程:&lt;/p&gt;</summary><category term="40323206"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:13:33+08:00</updated><author><name>40323204</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;p&gt;為了能夠更客觀進行各組與各學員的期末自評, 特別以組為單位, 各組員為內容建構成員, 利用四堂課程的時間, 在各組新建的 Github 倉儲中完成此一專案報告.&lt;/p&gt;
 >>>>>>> 148c26e62b7c9a171bcd80508deb9396cf51dd61
 
@@ -266,6 +286,10 @@ spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4)
 &lt;p&gt;5.點下後會出現下圖視窗，可在視窗中設定齒數、模數，紅筆圈起來處是指齒輪中間的孔，點選後可更改孔直徑&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://imgur.com/32w7TBC.png" height="60%" /&gt;&lt;/p&gt;
 &lt;h4&gt;齒輪組合方法&lt;/h4&gt;
+=======
+&lt;p&gt;&lt;a href="https://cad.onshape.com/documents/4a0f3c870751f01ee4527dc8/w/a38b85cf8b16eaa1d52599f9/e/40dcb1e72c21678324724daf"&gt;3D齒輪配合&lt;/a&gt;
+&lt;img src="http://i.imgur.com/xz0EBI1.png"&gt; &lt;/p&gt;</summary><category term="40323253"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:29:29+08:00</updated><author><name>40323204</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;p&gt;為了能夠更客觀進行各組與各學員的期末自評, 特別以組為單位, 各組員為內容建構成員, 利用四堂課程的時間, 在各組新建的 Github 倉儲中完成此一專案報告.&lt;/p&gt;
+>>>>>>> 2b842fe798c594ca9972192fc3da0fb7acd76c14
 
 &lt;p&gt;1.依照齒輪組合後的位置關係，繪製出底板&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://imgur.com/YNKUEdP.png" height="60%" /&gt;&lt;/p&gt;
@@ -335,8 +359,12 @@ spur(cx+pr1+pr2+pr2+pr3+pr3+pr4, cy, m, n4, pa, 180-180/n4)
 &lt;p&gt;最最後, 請各組依序完成上述工作任務後, 將各組與各學員所完成的網站連結放入 &lt;a href="https://github.com/2015fallhw/cdw11/wiki"&gt;https://github.com/2015fallhw/cdw11/wiki&lt;/a&gt; 各組員的對應資料區中, 以作為期末成績評分參考.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+<<<<<<< HEAD
 &lt;p&gt;祝大家 2016 Summer 假期愉快!&lt;/p&gt;</summary><category term="40323204"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:13:33+08:00</updated><author><name>40323204</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;p&gt;為了能夠更客觀進行各組與各學員的期末自評, 特別以組為單位, 各組員為內容建構成員, 利用四堂課程的時間, 在各組新建的 Github 倉儲中完成此一專案報告.&lt;/p&gt;
 >>>>>>> 148c26e62b7c9a171bcd80508deb9396cf51dd61
+=======
+&lt;p&gt;祝大家 2016 Summer 假期愉快!&lt;/p&gt;</summary><category term="40323204"></category><category term="cdw18"></category></entry><entry><title>協同產品設計實習期末考週專案報告</title><link href="http://cdw18-ag100.rhcloud.com/static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html" rel="alternate"></link><updated>2016-06-23T11:29:29+08:00</updated><author><name>40323204</name></author><id>tag:cdw18-ag100.rhcloud.com,2016-06-23:static/blog/xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html</id><summary type="html">&lt;p&gt;為了能夠更客觀進行各組與各學員的期末自評, 特別以組為單位, 各組員為內容建構成員, 利用四堂課程的時間, 在各組新建的 Github 倉儲中完成此一專案報告.&lt;/p&gt;
+>>>>>>> 2b842fe798c594ca9972192fc3da0fb7acd76c14
 
 
 &lt;p&gt;基本專案建置流程:&lt;/p&gt;
