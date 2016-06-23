@@ -26,4 +26,3 @@ http://cdw11-40323253.rhcloud.com/static/blog/40323253-qi-mo-bao-gao.html
 
 https://cad.onshape.com/documents/4a0f3c870751f01ee4527dc8/w/a38b85cf8b16eaa1d52599f9/e/40dcb1e72c21678324724daf
 
-40323253  http://cdw11-40323253.rhcloud.com/static/blog/40323253-qi-mo-bao-gao.html
