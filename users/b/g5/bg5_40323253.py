@@ -38,7 +38,7 @@ from browser import window
 from javascript import JSConstructor
 import math
  
-# 主要用來取得畫布大小
+# 主要來取大小得畫布
 canvas = doc["gear1"]
 # 此程式採用 Cango Javascript 程式庫繪圖, 因此無需 ctx
 #ctx = canvas.getContext("2d")
