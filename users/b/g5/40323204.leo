@@ -10,7 +10,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20160501215436.2"><vh>pelican 部份</vh>
+<v t="amd.20160501215436.2" a="E"><vh>pelican 部份</vh>
 <v t="amd.20160501215558.1" a="E"><vh>@path ./../../../</vh>
 <v t="amd.20160501223113.1"><vh>@edit README.md</vh></v>
 <v t="amd.20160501215634.1" a="E"><vh>@path static</vh>
