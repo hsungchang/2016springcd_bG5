@@ -1,4 +1,175 @@
-# coding: utf-8
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
+<?xml-stylesheet ekr_test ?>
+<leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
+<preferences/>
+<find_panel_settings/>
+<vnodes>
+<v t="amd.20160501215545.1" a="E"><vh>wsgi 程式部份</vh>
+<v t="leo.20160623092903.1"><vh>@edit bg5_40323253.py</vh></v>
+<v t="amd.20160501221015.1" a="E"><vh>@path ./../../../</vh>
+<v t="amd.20160501221001.1" a="E"><vh>@clean myflaskapp.py</vh>
+<v t="amd.20160501221001.2"><vh>myflaskapp declarations</vh></v>
+<v t="amd.20160501221001.3"><vh>index</vh></v>
+<v t="amd.20160501221001.4"><vh>user</vh></v>
+<v t="amd.20160501221001.5"><vh>red</vh></v>
+<v t="amd.20160501221001.6"><vh>guessform</vh></v>
+<v t="amd.20160501221001.7"><vh>docheck</vh></v>
+<v t="amd.20160501221001.8"><vh>option</vh></v>
+<v t="amd.20160501221001.9"><vh>optionaction</vh></v>
+<v t="amd.20160501221001.10"><vh>fileaxupload</vh></v>
+<v t="amd.20160501221001.11"><vh>fileuploadform</vh></v>
+<v t="amd.20160501221001.12"><vh>imageaxupload</vh></v>
+<v t="amd.20160501221001.13"><vh>imagefileuploadform</vh></v>
+<v t="amd.20160501221001.14"><vh>download</vh></v>
+<v t="amd.20160501221001.15"><vh>send_images</vh></v>
+<v t="amd.20160501221001.16"><vh>send_static</vh></v>
+<v t="amd.20160501230850.1"><vh>send_blog</vh></v>
+<v t="amd.20160501225844.1"><vh>send_file</vh></v>
+</v>
+</v>
+</v>
+</vnodes>
+<tnodes>
+<t tx="amd.20160501215545.1"></t>
+<t tx="amd.20160501221001.1">@language python
+@tabwidth -4
+@others
+if __name__ == "__main__":
+    app.run()
+
+app.register_blueprint(users.b.g5.bg5_40323253.bg5_40323253)</t>
+<t tx="amd.20160501221001.10">@app.route('/fileaxupload', methods=['POST'])
+# ajax jquery chunked file upload for flask
+def fileaxupload():
+    '''
+    if not session.get('logged_in'):
+        #abort(401)
+        return redirect(url_for('login'))
+    '''
+    # need to consider if the uploaded filename already existed.
+    # right now all existed files will be replaced with the new files
+    filename = request.args.get("ax-file-name")
+    flag = request.args.get("start")
+    if flag == "0":
+        file = open(data_dir+"downloads/"+filename, "wb")
+    else:
+        file = open(data_dir+"downloads/"+filename, "ab")
+    file.write(request.stream.read())
+    file.close()
+    return "files uploaded!"
+
+    
+    
+</t>
+<t tx="amd.20160501221001.11">@app.route('/fileuploadform')
+def fileuploadform():
+    '''
+    if not session.get('logged_in'):
+        #abort(401)
+        return redirect(url_for('login'))
+    '''
+    return "&lt;h1&gt;file upload&lt;/h1&gt;"+'''
+  &lt;script src="/static/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="/static/axuploader.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  $(document).ready(function(){
+  $('.prova').axuploader({url:'fileaxupload', allowExt:['jpg','png','gif','7z','pdf','zip','flv','stl','swf'],
+  finish:function(x,files)
+{
+    alert('All files have been uploaded: '+files);
+},
+  enable:true,
+  remotePath:function(){
+  return 'downloads/';
+  }
+  });
+  });
+  &lt;/script&gt;
+  &lt;div class="prova"&gt;&lt;/div&gt;
+  &lt;input type="button" onclick="$('.prova').axuploader('disable')" value="asd" /&gt;
+  &lt;input type="button" onclick="$('.prova').axuploader('enable')" value="ok" /&gt;
+  &lt;/section&gt;&lt;/body&gt;&lt;/html&gt;
+  '''
+</t>
+<t tx="amd.20160501221001.12">@app.route('/imageaxupload', methods=['POST'])
+# ajax jquery chunked file upload for flask
+def imageaxupload():
+    '''
+    if not session.get('logged_in'):
+        #abort(401)
+        return redirect(url_for('login'))
+    '''
+    # need to consider if the uploaded filename already existed.
+    # right now all existed files will be replaced with the new files
+    filename = request.args.get("ax-file-name")
+    flag = request.args.get("start")
+    if flag == "0":
+        file = open(data_dir+"images/"+filename, "wb")
+    else:
+        file = open(data_dir+"images/"+filename, "ab")
+    file.write(request.stream.read())
+    file.close()
+    return "image file uploaded!"
+
+    
+    
+</t>
+<t tx="amd.20160501221001.13">@app.route('/imageuploadform')
+def imageuploadform():
+    '''
+    if not session.get('logged_in'):
+        #abort(401)
+        return redirect(url_for('login'))
+    '''
+    return "&lt;h1&gt;file upload&lt;/h1&gt;"+'''
+  &lt;script src="/static/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script src="/static/axuploader.js" type="text/javascript"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  $(document).ready(function(){
+  $('.prova').axuploader({url:'imageaxupload', allowExt:['jpg','png','gif','7z','pdf','zip','flv','stl','swf'],
+  finish:function(x,files)
+{
+    alert('All files have been uploaded: '+files);
+},
+  enable:true,
+  remotePath:function(){
+  return 'images/';
+  }
+  });
+  });
+  &lt;/script&gt;
+  &lt;div class="prova"&gt;&lt;/div&gt;
+  &lt;input type="button" onclick="$('.prova').axuploader('disable')" value="asd" /&gt;
+  &lt;input type="button" onclick="$('.prova').axuploader('enable')" value="ok" /&gt;
+  &lt;/section&gt;&lt;/body&gt;&lt;/html&gt;
+  '''
+</t>
+<t tx="amd.20160501221001.14">@app.route('/downloads/&lt;path:filename&gt;', methods=['GET', 'POST'])
+def download(filename):
+    #return send_from_directory(download_dir, filename=filename, as_attachment=True)
+    return send_from_directory(download_dir, filename=filename)
+    
+
+
+</t>
+<t tx="amd.20160501221001.15"># setup static directory
+@app.route('/images/&lt;path:path&gt;')
+def send_images(path):
+    return send_from_directory(data_dir+"/images/", path)
+</t>
+<t tx="amd.20160501221001.16"># setup static directory
+@app.route('/static/')
+def send_static():
+  return app.send_static_file('index.html')
+
+</t>
+<t tx="amd.20160501221001.2"># coding: utf-8
 from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
 import random
 import math
@@ -40,7 +211,8 @@ app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
 
 
 
-@app.route("/")
+</t>
+<t tx="amd.20160501221001.3">@app.route("/")
 def index():
     #這是猜數字遊戲的起始表單, 主要在產生答案, 並且將 count 歸零
     # 將標準答案存入 answer session 對應區
@@ -51,21 +223,25 @@ def index():
     session['count'] = thecount
 
     return render_template("index.html", answer=theanswer, count=thecount)
-@app.route('/user/<name>')
+</t>
+<t tx="amd.20160501221001.4">@app.route('/user/&lt;name&gt;')
 def user(name):
     return render_template("user.html", name=name)
-@app.route('/red')
+</t>
+<t tx="amd.20160501221001.5">@app.route('/red')
 def red():
     # 重新導向 google
     return redirect("http://www.google.com")
-@app.route('/guessform')
+</t>
+<t tx="amd.20160501221001.6">@app.route('/guessform')
 def guessform():
     session["count"] += 1
     guess = session.get("guess")
     theanswer = session.get("answer")
     count = session.get("count")
     return render_template("guessform.html", guess=guess, answer=theanswer, count=count)
-@app.route('/docheck', methods=['POST'])
+</t>
+<t tx="amd.20160501221001.7">@app.route('/docheck', methods=['POST'])
 def docheck():
     # session[] 存資料
     # session.get() 取 session 資料
@@ -89,17 +265,18 @@ def docheck():
     session["count"] += 1
     count = session.get("count")
     # 答案與所猜數字進行比對
-    if theanswer < theguess:
+    if theanswer &lt; theguess:
         return render_template("toobig.html", guess=guess, answer=theanswer, count=count)
-    elif theanswer > theguess:
+    elif theanswer &gt; theguess:
         return render_template("toosmall.html", guess=guess, answer=theanswer, count=count)
     else:
         # 已經猜對, 從 session 取出累計猜測次數
         thecount = session.get('count')
-        return "猜了 "+str(thecount)+" 次, 終於猜對了, 正確答案為 "+str(theanswer)+": <a href='/'>再猜</a>"
+        return "猜了 "+str(thecount)+" 次, 終於猜對了, 正確答案為 "+str(theanswer)+": &lt;a href='/'&gt;再猜&lt;/a&gt;"
     return render_template("docheck.html", guess=guess)
  
-@app.route('/option', methods=["GET", "POST"])
+</t>
+<t tx="amd.20160501221001.8">@app.route('/option', methods=["GET", "POST"])
 def option():
     # 各組選出組長的方式, 若採遞增, 則各組內學號最小者為組長
     option_list1 = ["遞增", "遞減"]
@@ -113,7 +290,8 @@ def option():
     # 表示這些學員必須與其他同組學員共用電腦
 
     return render_template('option.html', option_list1=option_list1, option_list2=option_list2, option_list3=option_list3, column=column)
-@app.route('/optionaction', methods=['POST'])
+</t>
+<t tx="amd.20160501221001.9">@app.route('/optionaction', methods=['POST'])
 def optionaction():
     # 最後傳回的字串為 out_string
     out_string = ""
@@ -141,7 +319,7 @@ def optionaction():
         # j 為組員序
         for j in range(len(result[i])):
             tmp_string += result[i][j] + ", "
-        out_string += "第" + str(i+1) + "排資料:"+ tmp_string + "<br />"
+        out_string += "第" + str(i+1) + "排資料:"+ tmp_string + "&lt;br /&gt;"
         tmp_string = ""
     for i in range(len(result)):
         # 開始進入組內排序, 根據 request.form["option1"]  的值決定遞增或遞減
@@ -161,14 +339,14 @@ def optionaction():
     else:
         desc_string += "各組長中學號最大者為第1組."
         final_result = sorted(group_sorted, reverse=True)
-    out_string += "<br />" + desc_string + "<br />"
+    out_string += "&lt;br /&gt;" + desc_string + "&lt;br /&gt;"
     # i 為行序
     for i in range(len(final_result)):
         # j 為組員序
         for j in range(len(final_result[i])):
             num_of_stud += 1
             tmp_string += final_result[i][j] + ","
-        out_string += "第" + str(i+1) + "組:"+ tmp_string + "<br />"
+        out_string += "第" + str(i+1) + "組:"+ tmp_string + "&lt;br /&gt;"
         tmp_string = ""
     #return "總共有" + str(i+) + "組"
     # group_num 為總組數
@@ -212,9 +390,9 @@ def optionaction():
     import operator
     seat_dict_sort = sorted(seat_dict.items(), key = operator.itemgetter(0), reverse = False)
     # 依照學號順序, 列出座位表
-    out_string += "<br />按照學號次序列出座位表:<br /><br />"
+    out_string += "&lt;br /&gt;按照學號次序列出座位表:&lt;br /&gt;&lt;br /&gt;"
     for i in range(1, len(seat_dict_sort)):
-        out_string +=  str(i) + ":"+ str(seat_dict_sort[i]) + "<br />"
+        out_string +=  str(i) + ":"+ str(seat_dict_sort[i]) + "&lt;br /&gt;"
     # 結束準備用順序列出學員座號
     # dont know why .reverse() did not work, 只有 [::-1] 可以 reverse list elements
     #g.es(column_list[::-1])
@@ -226,156 +404,40 @@ def optionaction():
     # 列出最後的座位表
     #g.es(final_seat)
     # 最後轉成 html table 標註格式
-    out_string += "<br /> <br />"
-    out_string += "<table border='1' width='100%'>"
-    out_string += "<tr><td colspan='9' style='text-align:center'>講台</td></tr>"
+    out_string += "&lt;br /&gt; &lt;br /&gt;"
+    out_string += "&lt;table border='1' width='100%'&gt;"
+    out_string += "&lt;tr&gt;&lt;td colspan='9' style='text-align:center'&gt;講台&lt;/td&gt;&lt;/tr&gt;"
     for row in range(len(final_seat)):
-        out_string += "<tr>"
+        out_string += "&lt;tr&gt;"
         # 因為每一 row 有 9, 也就是 total_column 個位子
         for i in range(total_column):
             try:
                 if i%2 != 0:
-                    out_string += "<td style='text-align:center'  bgcolor='#FFD78C' height='30'>" + str(final_seat[row][i]) + "</td>"
+                    out_string += "&lt;td style='text-align:center'  bgcolor='#FFD78C' height='30'&gt;" + str(final_seat[row][i]) + "&lt;/td&gt;"
                 else:
-                    out_string += "<td style='text-align:center' height='30'>" + str(final_seat[row][i]) + "</td>"
+                    out_string += "&lt;td style='text-align:center' height='30'&gt;" + str(final_seat[row][i]) + "&lt;/td&gt;"
             except:
-                out_string += "<td>&nbsp;</td>"
-        out_string += "</tr>"
-    out_string += "</table><br /><br /><br />"
+                out_string += "&lt;td&gt;&amp;nbsp;&lt;/td&gt;"
+        out_string += "&lt;/tr&gt;"
+    out_string += "&lt;/table&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;"
     return out_string
     # 等運算或資料處理結束後, 再將相關值送到對應的 template 進行資料的展示
     #return render_template('optionaction.html', option_list1=option_list1, option_list2=option_list2)
     
 
-@app.route('/fileaxupload', methods=['POST'])
-# ajax jquery chunked file upload for flask
-def fileaxupload():
-    '''
-    if not session.get('logged_in'):
-        #abort(401)
-        return redirect(url_for('login'))
-    '''
-    # need to consider if the uploaded filename already existed.
-    # right now all existed files will be replaced with the new files
-    filename = request.args.get("ax-file-name")
-    flag = request.args.get("start")
-    if flag == "0":
-        file = open(data_dir+"downloads/"+filename, "wb")
-    else:
-        file = open(data_dir+"downloads/"+filename, "ab")
-    file.write(request.stream.read())
-    file.close()
-    return "files uploaded!"
+</t>
+<t tx="amd.20160501221015.1"></t>
+<t tx="amd.20160501225844.1"># setup static directory
+@app.route('/static/&lt;path:path&gt;')
+def send_file(path):
+  return app.send_static_file(static_dir+path)
 
-    
-    
-@app.route('/fileuploadform')
-def fileuploadform():
-    '''
-    if not session.get('logged_in'):
-        #abort(401)
-        return redirect(url_for('login'))
-    '''
-    return "<h1>file upload</h1>"+'''
-  <script src="/static/jquery.js" type="text/javascript"></script>
-  <script src="/static/axuploader.js" type="text/javascript"></script>
-  <script>
-  $(document).ready(function(){
-  $('.prova').axuploader({url:'fileaxupload', allowExt:['jpg','png','gif','7z','pdf','zip','flv','stl','swf'],
-  finish:function(x,files)
-{
-    alert('All files have been uploaded: '+files);
-},
-  enable:true,
-  remotePath:function(){
-  return 'downloads/';
-  }
-  });
-  });
-  </script>
-  <div class="prova"></div>
-  <input type="button" onclick="$('.prova').axuploader('disable')" value="asd" />
-  <input type="button" onclick="$('.prova').axuploader('enable')" value="ok" />
-  </section></body></html>
-  '''
-@app.route('/imageaxupload', methods=['POST'])
-# ajax jquery chunked file upload for flask
-def imageaxupload():
-    '''
-    if not session.get('logged_in'):
-        #abort(401)
-        return redirect(url_for('login'))
-    '''
-    # need to consider if the uploaded filename already existed.
-    # right now all existed files will be replaced with the new files
-    filename = request.args.get("ax-file-name")
-    flag = request.args.get("start")
-    if flag == "0":
-        file = open(data_dir+"images/"+filename, "wb")
-    else:
-        file = open(data_dir+"images/"+filename, "ab")
-    file.write(request.stream.read())
-    file.close()
-    return "image file uploaded!"
-
-    
-    
-@app.route('/imageuploadform')
-def imageuploadform():
-    '''
-    if not session.get('logged_in'):
-        #abort(401)
-        return redirect(url_for('login'))
-    '''
-    return "<h1>file upload</h1>"+'''
-  <script src="/static/jquery.js" type="text/javascript"></script>
-  <script src="/static/axuploader.js" type="text/javascript"></script>
-  <script>
-  $(document).ready(function(){
-  $('.prova').axuploader({url:'imageaxupload', allowExt:['jpg','png','gif','7z','pdf','zip','flv','stl','swf'],
-  finish:function(x,files)
-{
-    alert('All files have been uploaded: '+files);
-},
-  enable:true,
-  remotePath:function(){
-  return 'images/';
-  }
-  });
-  });
-  </script>
-  <div class="prova"></div>
-  <input type="button" onclick="$('.prova').axuploader('disable')" value="asd" />
-  <input type="button" onclick="$('.prova').axuploader('enable')" value="ok" />
-  </section></body></html>
-  '''
-@app.route('/downloads/<path:filename>', methods=['GET', 'POST'])
-def download(filename):
-    #return send_from_directory(download_dir, filename=filename, as_attachment=True)
-    return send_from_directory(download_dir, filename=filename)
-    
-
-
-# setup static directory
-@app.route('/images/<path:path>')
-def send_images(path):
-    return send_from_directory(data_dir+"/images/", path)
-# setup static directory
-@app.route('/static/')
-def send_static():
-  return app.send_static_file('index.html')
-
-# setup static directory
+</t>
+<t tx="amd.20160501230850.1"># setup static directory
 @app.route('/static/blog/')
 def send_blog():
   return app.send_static_file('blog/index.html')
 
-# setup static directory
-@app.route('/static/<path:path>')
-def send_file(path):
-  return app.send_static_file(static_dir+path)
-
-if __name__ == "__main__":
-    app.run()
-
-app.register_blueprint(users.b.g5.bg5_40323253.bg5_40323253)
+</t>
+</tnodes>
+</leo_file>
