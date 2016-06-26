@@ -14,9 +14,9 @@
 
 40323251個人網誌:http://40323251cdw11g5-40323251.rhcloud.com/static/blog/40323251-cdw11-qi-mo-xin-de-bao-gao.html
 
-40323253 W18個人網誌: https://40323253.github.io/2016springcd_bG5_40323253/static/blog/40323253-xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html
+40323253 W18及期末心得 : https://40323253.github.io/2016springcd_bG5_40323253/static/blog/40323253-xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html
 
-40323253 期末個人網誌 : http://cdw11-40323253.rhcloud.com/static/blog/40323253-qi-mo-bao-gao.html
+40323253 期末個人心得 : http://cdw11-40323253.rhcloud.com/static/blog/40323253-qi-mo-bao-gao.html
 
 40323253 W18網際2D繪圖 : http://2016springcdbg5-40323204.rhcloud.com/bg5_40323253_2/a
 
