@@ -2,7 +2,11 @@
 
 個人網誌期末報告：
 
-40323204個人 Github Page 網頁:
+40323204個人 Github Page 網頁: https://hsungchang.github.io/2016springcd_bG5_40323204/static/blog/40323204qi-mo-kao-zhou-zhuan-an-bao-gao
+
+40323204期末 pelican 網誌 :  http://cdw11g5-40323204sandy.rhcloud.com/static/blog/40323204-cdw11-qi-mo-xin-de-bao-gao.html
+
+40323204網際2D繪圖 :  http://2016springcdbg5-40323204.rhcloud.com/bg5_40323204_2/acbd
 
 40323206個人網誌:http://cdw11bg5-40323206.rhcloud.com/static/blog/40323206-cdw11-bao-gao.html
 
