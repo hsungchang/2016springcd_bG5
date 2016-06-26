@@ -320,7 +320,7 @@ from browser import document, html&lt;/p&gt;
 &lt;h1&gt;3個齒輪的齒數&lt;/h1&gt;
 &lt;p&gt;n1 = 17
 n2 = 29
-n3 = 15&lt;/p&gt;
+n3 = 15 &lt;/p&gt;
 &lt;h1&gt;根據繪圖的 3 個齒輪大小計算所需的畫布高度&lt;/h1&gt;
 &lt;p&gt;height = 1.2&lt;em&gt;800&lt;/em&gt;0.8/(int(n1)+int(n2)+int(n3))*max([int(n1), int(n2), int(n3)])&lt;/p&gt;
 &lt;h1&gt;決定畫布的 id 字串&lt;/h1&gt;
