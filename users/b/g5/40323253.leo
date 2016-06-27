@@ -26,9 +26,9 @@
 </v>
 </v>
 </v>
-<v t="amd.20160501215545.1" a="E"><vh>wsgi 程式部份</vh>
+<v t="amd.20160501215545.1"><vh>wsgi 程式部份</vh>
 <v t="leo.20160602100541.1"><vh>@edit bg5_40323253_2.py</vh></v>
-<v t="leo.20160512142003.1" a="E"><vh>@clean bg5_40323253_1.py</vh>
+<v t="leo.20160512142003.1"><vh>@clean bg5_40323253_1.py</vh>
 <v t="leo.20160512142214.1"><vh>bg5_40323253_1 declarations</vh></v>
 <v t="leo.20160512142214.2"><vh>a</vh></v>
 <v t="leo.20160512142214.3"><vh>b</vh></v>
@@ -60,7 +60,7 @@
 <v t="leo.20160512142214.29"><vh>snap_gear</vh></v>
 <v t="leo.20160627181421.1"><vh>hw</vh></v>
 </v>
-<v t="leo.20160505115812.1" a="E"><vh>@clean bg5_40323253.py</vh>
+<v t="leo.20160505115812.1"><vh>@clean bg5_40323253.py</vh>
 <v t="leo.20160505115812.2"><vh>bg5_40323253 declarations</vh></v>
 <v t="leo.20160505115812.3"><vh>a</vh></v>
 <v t="leo.20160505115812.4"><vh>draw_a</vh></v>
