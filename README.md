@@ -14,7 +14,6 @@
 
 40323253 W18及期末心得 : https://40323253.github.io/2016springcd_bG5_40323253/static/blog/40323253-xie-tong-chan-pin-she-ji-shi-xi-qi-mo-kao-zhou-zhuan-an-bao-gao.html
 
-40323253 期末個人心得 :https://hsungchang.github.io/2016springcd_bG5/static/blog/40323253.html
 40323253 W18網際2D繪圖 : http://2016springcdbg5-40323204.rhcloud.com/bg5_40323253_2/a
 
 40323255個人網誌:

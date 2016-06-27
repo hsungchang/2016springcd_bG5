@@ -188,3 +188,67 @@ x1, y1 = mychain.basic_rot('''+str(x)+","+str(y)+", "+str(first_degree)+''')
 #@ag100.route('/circle36/<int:x>/<int:y>/<int:degree>')
 def drawcircle36(x,y,degree):
     return head_str + chain_str + circle36(int(x), int(y), int(degree)) + tail_str
+@bg5_40323253.route('/hw_link')
+def hw_link():
+    outstring = '''
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>網際 2D 繪圖</title>
+    <!-- IE 9: display inline SVG -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
+</head>
+<body>
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+<canvas id="plotarea" width="800" height="800"></canvas>
+<script type="text/python">
+from javascript import JSConstructor
+from browser import window
+import math
+cango = JSConstructor(window.Cango)
+cobj = JSConstructor(window.Cobj)
+shapedefs = window.shapeDefs
+obj2d = JSConstructor(window.Obj2D)
+cgo = cango("plotarea")
+cgo.setWorldCoords(-250, -250, 500, 500) 
+        
+#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 }) 
+deg = math.pi/180  
+def O(x, y, rx, ry, rot, color, border, linewidth):
+    # 旋轉必須要針對相對中心 rot not working yet
+    chamber = "M65.000 35.000 A30.000,30.000 0 0,0 35.000,5.000 A30.000,30.000 0 0,0 5.000,35.000 A30.000,30.000 0 0,0 35.000,65.000 A30.000,30.000 0 0,0 65.000,35.000 M32.300 25.000 A7.500,7.500 0 0,1 24.800,32.500 A7.500,7.500 0 0,1 17.300,25.000 A7.500,7.500 0 0,1 24.800,17.500 A7.500,7.500 0 0,1 32.300,25.000 M53.900 25.000 A7.500,7.500 0 0,1 46.400,32.500 A7.500,7.500 0 0,1 38.900,25.000 A7.500,7.500 0 0,1 46.400,17.500 A7.500,7.500 0 0,1 53.900,25.000 M20.000 45.000 L50.000,45.000 A15.000,15.000 0 0,1 35.000,60.000 A15.000,15.000 0 0,1 20.000,45.000 z"
+    cgoChamber = window.svgToCgoSVG(chamber)
+    cmbr = cobj(cgoChamber, "SHAPE", {
+            "fillColor": color,
+            "border": border,
+            "strokeColor": "tan",
+            "lineWidth": linewidth })
+            
+            
+            
+    cmbr.translate(0, 0)    
+            
+ 
+   
+    
+    
+    # hole 為原點位置
+    #hole = cobj(shapedefs.circle(4), "PATH") 
+    #cmbr.appendPath(hole) 
+  
+    # 放大 1 倍
+    cgo.render(cmbr, x, y, 3, rot)
+    
+O(0, 0, 0, 0, 0, "green", False, 4)
+</script>
+'''
+    return outstring
